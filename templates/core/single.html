@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+
+
+{% block content%}
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <img class='card-img-top' src='{{post.image.url}}' alt='card image cap' width="500" height="300">
+                    <div class="card-body">
+                        <h4 class="">{{post.title}}</h4>
+
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="">
+                                <small class="text-muted">{{post.puplished}}</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <p>{{post.excpert}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}
